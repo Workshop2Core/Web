@@ -12,7 +12,7 @@ public class LoginHistory implements Serializable {
 	private static final long serialVersionUID = 1L;
 	private long idlogin;
 	private Timestamp logintime;
-	private User user;
+	private String user;
 
 	public LoginHistory() {
 	}
@@ -33,11 +33,11 @@ public class LoginHistory implements Serializable {
 		this.logintime = logintime;
 	}
 
-	public User getUser() {
+	public String getUser() {
 		return this.user;
 	}
 
-	public void setUser(User user) {
+	public void setUser(String user) {
 		this.user = user;
 	}
 

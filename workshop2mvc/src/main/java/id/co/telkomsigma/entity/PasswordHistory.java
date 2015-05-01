@@ -14,7 +14,7 @@ public class PasswordHistory implements Serializable {
 	private long idpassword;
 	private String oldpwd;
 	private Timestamp timechange;
-	private User user;
+	private String user;
 
 	public PasswordHistory() {
 	}
@@ -43,11 +43,11 @@ public class PasswordHistory implements Serializable {
 		this.timechange = timechange;
 	}
 
-	public User getUser() {
+	public String getUser() {
 		return this.user;
 	}
 
-	public void setUser(User user) {
+	public void setUser(String user) {
 		this.user = user;
 	}
 

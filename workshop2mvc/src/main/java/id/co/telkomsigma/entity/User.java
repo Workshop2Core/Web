@@ -63,13 +63,6 @@ public class User implements Serializable {
 		this.loginHistories = loginHistories;
 	}
 
-	public LoginHistory addLoginHistory(LoginHistory loginHistory) {
-		getLoginHistories().add(loginHistory);
-		loginHistory.setUser(this);
-
-		return loginHistory;
-	}
-
 	public LoginHistory removeLoginHistory(LoginHistory loginHistory) {
 		getLoginHistories().remove(loginHistory);
 		loginHistory.setUser(null);
@@ -105,13 +98,6 @@ public class User implements Serializable {
 
 	public void setPasswordHistories(List<PasswordHistory> passwordHistories) {
 		this.passwordHistories = passwordHistories;
-	}
-
-	public PasswordHistory addPasswordHistory(PasswordHistory passwordHistory) {
-		getPasswordHistories().add(passwordHistory);
-		passwordHistory.setUser(this);
-
-		return passwordHistory;
 	}
 
 	public PasswordHistory removePasswordHistory(PasswordHistory passwordHistory) {
